@@ -43,17 +43,17 @@ def test_register_user():
 
 
 
-@pytest.mark.django_db
-def test_login_user():
-    payload = dict(
-        name="testing123",
-        email="test11@test.com",
-        password="super-secret"
-    )
-    client.post("/api/users/login/", payload)
-
-    response = client.post("/api/users/login/", dict(email="test11@test.com", password="super-secret"))
-
-    assert response.status_code == 200
+# @pytest.mark.django_db
+# def test_login_user():
+#     payload = dict(
+#         name="testing123",
+#         email="test11@test.com",
+#         password="super-secret"
+#     )
+#     client.post("/api/users/login/", payload)
+#
+#     response = client.post("/api/users/login/", dict(email="test11@test.com", password="super-secret"))
+#
+#     assert response.status_code == 200
 
 
