@@ -7,12 +7,12 @@ from ..unit.test_Admin_User import user_1
 
 
 # Api test  - Integration testing
-
-def test_api_nigative_product_creation(db,user_2):
+@pytest.mark.django_db
+def test_api_Nigative_product_creation():
     client = APIClient()
-    # user = User.objects.create_user(username="testuser", password="123456789")
-    user = user_2
-    client.force_authenticate(user)
+    user2 = User.objects.create_user(username="test11@test.com",password="super-secret")
+    # user2 = user_2
+    client.force_authenticate(user2)
     response = client.post("/api/products/create/")
 
     # data = response.data

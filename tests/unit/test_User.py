@@ -13,7 +13,7 @@ def test_user_create():
 
 @pytest.fixture()
 def user_2(db):
-    return User.objects.create_superuser(username="test11@test.com",password="super-secret")
+    return User.objects.create_user(username="test11@test.com",password="super-secret")
 
 @pytest.mark.django_db
 def test_set_check_password(user_2):
