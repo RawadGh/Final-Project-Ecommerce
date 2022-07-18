@@ -12,7 +12,7 @@ def create_product():
         description=" ")
 
 
-@pytest.fixture()
+@pytest.mark.django_db
 def test_product_creation():
     p = create_product()
     assert isinstance(p, Product) is True

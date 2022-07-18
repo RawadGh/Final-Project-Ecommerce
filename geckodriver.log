@@ -46,3 +46,19 @@ JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeE
 console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://127.0.0.1:8000"
 JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
 1658084500794	Marionette	INFO	Stopped listening on port 64808
+1658157054493	geckodriver	INFO	Listening on 127.0.0.1:56834
+1658157057580	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "56835" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Rawad\\AppData\\Local\\Temp\\rust_mozprofileQbE7dx"
+1658157058060	Marionette	INFO	Marionette enabled
+1658157058066	Marionette	INFO	Listening on port 56845
+WebDriver BiDi listening on ws://localhost:56835
+Read port: 56845
+1658157058186	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Rawad\\AppData\\Local\\Temp\\rust_mozprofileQbE7dx\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56835/devtools/browser/bf46ab5a-41ba-4277-998f-722e23ba2daf
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://127.0.0.1:8000"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://127.0.0.1:8000"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "http://127.0.0.1:8000"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+1658157098161	Marionette	INFO	Stopped listening on port 56845
+[Parent 19788, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167

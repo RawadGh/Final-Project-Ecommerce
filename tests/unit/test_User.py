@@ -12,11 +12,13 @@ def test_user_create():
     assert count == 1
 
 @pytest.fixture()
-def user_1(db):
-    return User.objects.create_superuser(username="testing123@test.com",
+def user_2(db):
+    return User.objects.create_user(username="testing12345@test.com",
         password="super-secret")
 
 @pytest.mark.django_db
-def test_set_check_password(user_1):
-    user_1.set_password("new-password")
-    assert user_1.check_password("new-password") is True
+def test_set_check_password(user_2):
+    user_2.set_password("new-password")
+    assert user_2.check_password("new-password") is True
+
+

@@ -1,4 +1,5 @@
 import pytest
+from django.contrib.auth.hashers import make_password
 from rest_framework.test import APIClient
 
 
@@ -20,3 +21,6 @@ def test_register_user():
     data = response.data
 
     assert data["name"] == payload["name"]
+    assert data["username"] == payload["email"]
+    # assert data["password"] == payload["password"]
+
