@@ -22,5 +22,5 @@ def test_register_user():
 
     assert data["name"] == payload["name"]
     assert data["username"] == payload["email"]
-    # assert data["password"] == payload["password"]
+
 

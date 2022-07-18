@@ -33,10 +33,10 @@
 SET username = 'rawad@test.com', email= 'rawad@test.com'
 WHERE id = 6;
 
-select * from auth_user
-select * from auth_user
+update auth_user set is_superuser=1
 
-update auth_user set is_superuser=1]]></console>
+select * from auth_user
+select * from base_product]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
