@@ -151,7 +151,7 @@ def test_testBuyProduct(driver):
     driver.execute_script("window.scrollTo(0,600)")
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, "div.col-xl-3:nth-child(1) > div:nth-child(1) > a:nth-child(1) > img:nth-child(1)").click()
-    time.sleep(2)
+    time.sleep(3)
     driver.find_element(By.CSS_SELECTOR, "select.form-control").click()
     time.sleep(2)
     driver.find_element(By.CSS_SELECTOR, "select.form-control > option:nth-child(2)").click()
