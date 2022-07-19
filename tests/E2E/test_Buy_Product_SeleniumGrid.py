@@ -269,7 +269,7 @@ def test_testBuyProduct(driver):
 #
 #     assert first_elem_video_title.text == "What is Automated Testing?"
 #
-#     time.sleep(5)
+#     time.sleep(4)
 
 #
 # def test_run_parallel(browserName):
