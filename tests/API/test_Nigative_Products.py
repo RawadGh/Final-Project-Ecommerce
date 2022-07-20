@@ -6,7 +6,7 @@ from ..unit.test_Admin_User import user_1
 
 
 
-# Api test  - Integration testing
+# Api test  - Integration testing.
 @pytest.mark.django_db
 def test_api_Nigative_product_creation():
     client = APIClient()
